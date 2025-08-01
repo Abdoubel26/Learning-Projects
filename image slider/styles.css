@@ -1,0 +1,53 @@
+.slide {
+    position: relative;
+}
+
+.images {   
+    max-width: 100%;
+    display: none;
+}
+
+.displaying {
+    display: block;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(179, 155, 22);
+    
+}
+body {
+    background-color: navy;
+}
+
+#left, #right {
+    font-size: 1.75em;
+    background-color: rgba(0, 0, 139, 0.457);
+    color: #ffff;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 200px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center ;
+    height: 40px;
+    padding-top: 0px; 
+}
+
+#right {
+    transform: translateX(1744%);
+}
+
+#left:hover, #right:hover {
+    background-color:  hsla(240, 100%, 50%, 0.457);
+}
+
+#wrapper {
+    display: flex;
+}
+
+.notdisplaying {
+    display: none;
+}
