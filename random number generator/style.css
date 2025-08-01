@@ -1,0 +1,17 @@
+#mybutton{
+    padding: 10px;
+    font-size: 20px;
+    background-color: darkblue;
+    color: aqua;
+    border-radius: 5px;
+    font-family: Helvetica;
+}
+
+body {
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+.labels {
+    font-size: 30px;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>random password generator</title>
+    <link rel="stylesheet" href="styel.css">
+</head>
+<body>
+    <h1 id="myh1">Random Password Generator</h1>
+    <input type="number" value="12" id="lengthinput" min="1"><br><br>
+
+
+    <input type="checkbox" id="includelowercase">
+    <label for="includelowercaseinput" class="radiolabels">Include Lower Case Characters</label>
+    <br><br>
+
+    <input type="checkbox" id="includeuppercase">
+    <label for="includeuppercase" class="radiolabels">Include Upper Case Characters</label>
+    <br><br>
+
+    <input type="checkbox" id="includenumbers">
+    <label for="includenumbers" class="radiolabels">Include Numbers</label>
+    <br><br>
+
+    <input type="checkbox" id="includesymbols">
+    <label for="includesymbols" class="radiolabels">Include Symbols</label>
+    <br><br>
+
+    <button type="button" id="generatebtn">Generate</button>
+    <audio src="Click4.mp3" id="sound"></audio>
+    <br><br>
+
+    <div id="result-container">
+        <p id="resultp"></p>
+    </div>
+
+    <script src="logic.js"></script>
+</body>
+</html>

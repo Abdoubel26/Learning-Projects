@@ -1,0 +1,23 @@
+#countlabel {
+    font-size: 60px;
+    text-align: center;
+    margin: 20px;
+}
+
+#buttoncontainer {
+    text-align: center;
+}
+
+.buttons {
+    padding: 10px;
+    font-size: 20px;
+    background-color: blue;
+    color: aqua;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+
+.buttons:hover{
+    background-color: darkblue;
+}

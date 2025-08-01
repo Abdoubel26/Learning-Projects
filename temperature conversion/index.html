@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tempearature converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form>
+        <h1 id="myh">tempearature converter</h1>
+        <input type="number" id="myinput" value="0">
+        <br><br>
+
+        <input type="radio" id="ctf" name="option" >
+        <label for="ctf"  class="radios">Celsius to Fahrenheit</label>
+        <br><br>
+
+        <input type="radio" id="ctk" name="option">
+        <label for="ctk"  class="radios"> Celsius to Kelvin</label>
+        <br><br>
+
+        <input type="radio" id="ftc" name="option" >
+        <label for="ftc"  class="radios"> Fahrenheit to Celsius</label>
+        <br><br>
+        
+        <input type="radio" id="ftk" name="option">
+        <label for="ftk"  class="radios"> Fahrenheit to Kelvin</label>
+        <br><br>
+
+        <input type="radio" id="ktc" name="option">
+        <label for="ktc"  class="radios"> Kelvin to Celsius</label>
+        
+        <br><br>
+        
+        <input type="radio" id="ktf" name="option" >
+        <label for="ktf" class="radios"> Kelvin to Fahrenheit </label>
+        <br><br>
+        <button id="mysubmit" onclick="convert()" type="button">Submit</button>
+        <p id="myp"> <br> </p>
+        <br>
+    </form>
+    <script src="app.js"></script>
+</body>
+</html>

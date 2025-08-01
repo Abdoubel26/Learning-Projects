@@ -1,0 +1,51 @@
+body{
+    text-align: center;
+    background-color: rgb(217, 217, 217);
+     font-family: Arial;
+}
+
+form{
+    background-color: rgb(236, 243, 243);
+    max-width: 350px;
+    margin:auto;
+    border-radius: 5px;
+    box-shadow: 5px 5px black;
+    padding: 5px;
+    transition: box-shadow 0.25s;
+}
+
+form:hover{
+    box-shadow: 2px 2px black;
+}
+
+#myh {
+    color:rgb(192, 45, 45);
+}
+
+#myinput {
+    text-align: center;
+    font-size: 1.5em;
+    border: 2px solid;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px grey;
+}
+
+.radios {
+    font-size: 1.12em;
+}
+
+
+
+
+
+#mysubmit {
+    font-size: 1.5em;
+    background-color:crimson;
+    color: rgb(40, 38, 38);
+    border-radius: 4px;
+}
+
+
+#myp {
+    font-size: 1.5em;
+}

@@ -1,0 +1,71 @@
+body{
+    text-align: center;
+    background-color: aqua;
+    font-family: Arial;
+}
+
+#myh1 {
+    color: black;
+}
+
+#lengthinput {
+    font-size: 1.60em;
+    text-align: center;
+    border-radius: 5px;
+    border: 0.5px solid;
+    background-color: antiquewhite;
+    box-shadow: 0px 0px 2px black;
+}
+.radiolabels {
+    font-size: 1.12em;
+    color: darkred;
+}
+#generatebtn {
+    font-size: 1.30em;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 3px 3px rgb(177, 38, 38);
+    transition: box-shadow 0.25s;
+}
+
+
+#generatebtn:hover {
+    background-color: rgb(40, 36, 36);
+}
+
+#generatebtn:active{
+    box-shadow: none;
+}
+
+#result-container {
+    background-color: azure;
+    max-width: 360px;
+    margin: auto;
+    padding: 5px;
+    border-radius: 5px;
+    border: 0.5px solid;
+}
+
+#resultp{
+    font-size: 1.13em;
+    animation: bounceUp 0.2s ease-out;
+}
+
+@keyframes bounceUp {
+  0% {
+    transform: scale(0.3);
+  }
+  60% {
+    transform: scale(1.1);
+  }
+  80% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

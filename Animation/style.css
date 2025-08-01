@@ -1,0 +1,35 @@
+#loading {
+    height: 50px;
+    width: 50px;
+    border: 7px solid;
+    border-color: aliceblue;
+    border-radius: 2px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    translate: -50% -50%;
+    z-index: 10;
+    animation: 3s anime ease infinite;
+}
+
+@keyframes anime {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    33% {
+       transform: rotateX(180deg) rotateY(0deg) rotateZ(0deg);
+    }
+    66% {
+        transform: rotateX(180deg) rotateY(180deg) rotateZ(0deg);
+    }
+    100% {
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(180deg);
+    }
+}
+
+
+
+
+body {
+    background-color: black;
+}

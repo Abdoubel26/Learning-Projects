@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>searcho</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="search-container">
+        <input class="search" type="text" placeholder="Search for products.." id="searchInput">
+        <button id="searchBtn">Search</button> 
+        </div>
+       <br>
+        <div class="buttons">
+            <button class="catbtn" id="btn1" onclick="filterProducts('All')">All</button>
+            <button class="catbtn" id="btn2" onclick="filterProducts('jackets')">Jackets</button>
+            <button class="catbtn" id="btn3" onclick="filterProducts('pants')">Pants</button>
+            <button class="catbtn" id="btn5" onclick="filterProducts('t-shirts')">T-Shirts</button>
+            <button class="catbtn" id="btn6" onclick="filterProducts('watches')">Watches</button>
+        </div>
+    </div>
+    <div id="products-container">
+
+
+    </div>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+</html>
