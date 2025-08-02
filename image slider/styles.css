@@ -3,8 +3,9 @@
 }
 
 .images {   
-    max-width: 100%;
+    min-width: 100%;
     display: none;
+    max-width: 100%;
 }
 
 .displaying {
@@ -21,23 +22,29 @@ body {
 }
 
 #left, #right {
-    font-size: 1.75em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 4em;
     background-color: rgba(0, 0, 139, 0.457);
     color: #ffff;
     border: none;
-    cursor: pointer;
-    position: absolute;
-    top: 200px;
+    cursor: pointer;    
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center ;
-    height: 40px;
     padding-top: 0px; 
+    padding: 10px;
+    margin-top: 25%;
 }
 
 #right {
-    transform: translateX(1744%);
+    right: 0px;
+}
+
+#left {
+    left: 0px;
 }
 
 #left:hover, #right:hover {
@@ -48,6 +55,3 @@ body {
     display: flex;
 }
 
-.notdisplaying {
-    display: none;
-}
