@@ -1,0 +1,25 @@
+#inputE {
+    font-size: 2em;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+#inputE:focus {
+    outline: none;
+    border-bottom: 3px solid black;
+}
+
+#button {
+    font-size: 1.5em;
+    margin-top: 30px;
+    background-color: blue;
+    color: white;
+    padding: 5px;
+}
+
+
+#loadinggif {
+    max-width: 30px;
+    margin: 50px;
+}
