@@ -1,0 +1,104 @@
+body {
+    background-color: hsl(0, 0%, 90%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        font-family: Arial,sans-serif;
+
+}
+
+.inpute {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    margin: 10px;
+    padding: 5px;
+    max-width: 350px;
+    border-radius: 7px;
+    border: 2px solid rgba(0, 0, 0, 0.404);
+    font-weight: bold;
+}
+
+
+.inpute:focus {
+    outline: none;
+}
+
+.button {
+    padding: none;
+    background-color: rgb(32, 219, 32);
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    max-height: 70px;
+    margin: none;
+    margin-top: 5px;
+    font-size: 1.4em;
+}
+
+
+.button:hover {
+    background-color: hsl(120, 75%, 60%);
+}
+
+form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+
+.card {
+    background: linear-gradient( hsl(240, 100%, 80%), hsl(40, 100%, 60%));
+    padding: 30px;
+    border: none;
+    border-radius: 10px ;
+    display: flex;
+    flex-direction: column;
+    min-width: 225px;
+    margin: 15px;
+    align-items: center;
+}
+
+
+.cityName {
+    font-weight: bold;
+    color: #000000c9;
+}
+
+.temp {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.humidity {
+    font-size: 1.2em;
+    margin: 20px;
+    font-weight: bold;
+}
+
+.weatherdesc {
+    font-size: 1.2em;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 0px;
+}
+
+.imoji {
+    font-size: 4em;
+    margin: 10px;
+}
+
+
+.errorp {
+    font-size: 1.3em;
+    margin: 10px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.728);
+}
+
+
+.hidden {
+    display: none;
+}

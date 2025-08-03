@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <form id="form">
+    <input type="text" placeholder="Enter city" id="inputcity" class="inpute">
+    <button type="submit" id="mybutton" class="button">Get Weather</button>
+    </form>
+    
+    <div id="card" class="card" style="display: none;">
+        <h1 id="cityName" class="cityName"></h1>
+        <p id="temp" class="temp"></p>
+        <p id="humidity" class="humidity"></p>
+        <p id="weatherdesc" class="weatherdesc"></p>
+        <p id="imoji" class="imoji"></p>
+        <p id="errorp" class="errorp">something went wrong!</p>
+
+    </div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
