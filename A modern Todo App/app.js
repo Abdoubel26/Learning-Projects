@@ -19,12 +19,16 @@ form.addEventListener('submit', (event) => {
 
 function addtodo() {
     const todoText = input.value.trim();
+    const todoObject = {
+        todoname: todoText,
+        completed: false,
+    }
     if(todoText.length >= 1) {
-        alltodos.push(todoText); 
+        alltodos.push(todoObject); 
         console.log(alltodos);
         input.value = "";
         savetodos();
-        return todoText;
+        return todoObject;
 }
 }
 function displaytodos() {
@@ -51,7 +55,8 @@ function displaytodos() {
     const label = document.createElement('label');
     label.classList.add('todotext');
     label.setAttribute('for', `todo${index}`);
-    label.textContent = element;   
+    label.textContent = element.todoname;   
+    
         
     const deletebtn = document.createElement('button');
     deletebtn.classList.add('deletebtn');
@@ -66,13 +71,16 @@ function displaytodos() {
     todo.appendChild(label);
     todo.appendChild(deletebtn);
     deletebtn.appendChild(Deletegraphic);
-
-    // 4. Delete button
+  
     
-      deletebtn.addEventListener('click', () => { removetodo(index); 
+    deletebtn.addEventListener('click', () => { removetodo(index); });
 
-  });
 
+    checkbox.addEventListener('change', () => {
+        alltodos[index].completed = checkbox.checked;
+        savetodos();
+    })
+    checkbox.checked = alltodos[index].completed;
 
   });
 }
