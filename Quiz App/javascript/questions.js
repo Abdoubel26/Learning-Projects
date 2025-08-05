@@ -1,6 +1,6 @@
 // Array of questions grouped by category (25 questions each)
 
-const questions = [
+export const questions = [
   {
     category: "programming",
     questions: [

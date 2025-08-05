@@ -12,14 +12,14 @@
 
 </head>
 <body>
-    <div class="configuration-container">
+    <div class="configuration-container hidden">
         <h2 class="config-title">Quiz Configuration</h2>
         <h4 class="category-option">Select Category</h4>
         <div class="config-option">
             <button class="category-optionbtn" onclick="">Mathmatics</button>
+            <button class="category-optionbtn" onclick="">Programming</button>
             <button class="category-optionbtn" onclick="">History</button>
-            <button class="category-optionbtn" onclick="">biology</button>
-            <button class="category-optionbtn" onclick="">Physics</button>
+            <button class="category-optionbtn" onclick="">Science & Tech</button>
         </div>
 
         <div class="questionNumberConfig">
@@ -33,7 +33,7 @@
         <button class="starbtn" onclick="">Start Quiz</button>
     </div>
 
-    <div class="quiz-container hidden">
+    <div class="quiz-container">
         <header class="quiz-header">
             <h2 class="quiz-title">Quiz Application:</h2>
             <div class="quiz-timer">
@@ -42,9 +42,9 @@
         <hr>
         <div class="quizcontent">
 
-            <h3 class="question"><span class="questionNumber">Question 1: </span>Who invented the Telephone?</h3>
+            <h3 class="question"><span class="questionNumber">Question 3: </span> <span class="questionText"> who invented the Telephone?</span></h3>
             <ul class="answerOptions">
-                <li class="answerOption">
+               <!-- <li class="answerOption">
                     Thomas Edison
                 </li>
                 <li class="answerOption">
@@ -55,7 +55,7 @@
                 </li>
                 <li class="answerOption">
                     Nikola Tesla
-                </li>
+                </li>-->
             </ul>
             <hr>
             <div class="quizFooter">
@@ -72,7 +72,8 @@
         <button class="starbtn">Try Again</button>
     </div>
 
-     <script src="javascript/App.js"></script>
+     <script type="module" src="javascript/App.js"></script>
+     <script type="module" src="javascript/questions.js"></script>
 
 </body>
 </html>

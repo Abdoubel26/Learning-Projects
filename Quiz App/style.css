@@ -33,6 +33,7 @@ body {
     justify-content: center;
     min-height: 100vh;
     background: linear-gradient(135deg, #100661, #6C63FF);
+    user-select: none;
 }
 
 .configuration-container {
@@ -141,7 +142,7 @@ body {
 }
 
 .quiz-container {
-    height: 450px;
+    height: 475px;
     width: 415px;
     min-width: 500px;
     background-color: hsl(208, 25%, 90%);
@@ -220,7 +221,17 @@ body {
     background: #ebd3d3;
 }
 
+.wrong:hover {
+    border: 2px solid rgb(226, 62, 62);
+    background: #ebd3d3;
+}
+
+
 .correct {
+    border: 2px solid rgb(245, 210, 10);
+    background: rgb(224, 221, 202);
+}
+.correct:hover {
     border: 2px solid rgb(245, 210, 10);
     background: rgb(224, 221, 202);
 }
