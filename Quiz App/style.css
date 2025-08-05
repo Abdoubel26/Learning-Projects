@@ -1,0 +1,294 @@
+/* Importing google fonts - Monstserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color1: hsl(0, 0%, 0%) ;
+    --color2: hsl(240, 100%, 27%);
+    --color3: ;
+    --color4: ;
+    --color5: ;
+    --color6: ;
+}
+
+.black-theme {
+    --color1: ;
+    --color2: ;
+    --color3: ;
+    --color4: ;
+    --color5: ;
+    --color6: ; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+body {
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #100661, #6C63FF);
+}
+
+.configuration-container {
+    width: 415px;
+    background-color: hsl(208, 25%, 90%);
+    padding: 25px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 2px 2px 6px rgb(39, 27, 99);
+    transition: 200ms ease;
+}
+
+.configuration-container:hover {
+    box-shadow: 6px 6px black;
+}
+
+.config-title {
+    padding: 30px;
+    color: var(--color1);
+}
+
+.category-option {
+    font-size: 1.25em;
+    padding-bottom: 25px;
+    color: var(--color1);
+}
+
+.config-option {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    row-gap: 0px;
+}
+
+.category-optionbtn {
+    font-size: 1.15em;
+    margin-bottom: 15px;
+    color: var(--color1);
+    padding: 5px;
+    cursor: pointer;
+    font-weight: 475;
+    border: 1px solid #9B8FFF;
+    transition: 0.25s ease;
+}
+
+
+
+.category-optionbtn:hover {
+    background-color: var(--color2);
+    color: #ffffff;
+}
+
+.questionNo {  
+    font-size: 1.25em;
+    padding: 25px;
+    padding-bottom: 30px;
+    color: var(--color1);
+}
+
+.questionNobtn {
+    font-size: 1.15em;
+    margin-bottom: 15px;
+    color: var(--color1);
+    margin-left: 7px;
+    margin-right: 7px;
+    cursor: pointer;
+    font-weight: 475;
+    border: 1px solid #9B8FFF;
+    transition: 0.25s ease;
+    padding: 7px;
+}
+
+.questionNobtn:hover {
+    background-color: var(--color2);
+    color: white;
+}
+
+.starbtn {
+    font-size: 1.8em;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(92, 92, 225);
+    color: #ffffff;
+    border: none;
+    border-radius: 7px;
+    font-weight: bold;
+    transition: 200ms ease;
+  
+}
+
+.starbtn:hover {
+  box-shadow: 2px 2px 2px var(--color1);
+}
+
+.starbtn:active {
+  box-shadow: 0px 0px 0px ;
+}
+
+.active {
+    background-color: var(--color2);
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.quiz-container {
+    height: 450px;
+    width: 415px;
+    min-width: 500px;
+    background-color: hsl(208, 25%, 90%);
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px rgb(39, 27, 99);
+    transition: 200ms ease;
+}
+
+.quiz-header {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.quiz-title {
+    color: var(--color1);
+}
+
+
+.quiz-timer {
+    display: inline-flex;
+    align-items: center;
+    color: var(--color1);
+    background-color: red;
+    padding: 5px;
+    border-radius: 5px;
+    color: #ffffff;
+
+}
+
+.material-symbols-outlined {
+  font-size: 1.2em; /* match text size */
+  vertical-align: middle;
+}
+
+.question {
+    padding: 25px;
+    left: 0px;
+    padding-left: 0px;
+    color: var(--color1);
+    font-weight: 400;
+}
+
+.questionNumber {
+    font-weight: 700;
+    color: var(--color1);
+}
+
+.answerOptions {
+    list-style: none;
+    margin: 20px;
+    margin-top: 5px;
+    height: 175px;
+}
+
+
+.answerOption {
+    padding: 8px;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 0.5px solid;
+    margin-bottom: 5px;
+    transition: 100ms ease;
+
+}
+
+.answerOption:hover {
+    border: 2px solid #5145BA;
+    background: #F3F1ff;
+}
+    
+.wrong {
+    border: 2px solid rgb(226, 62, 62);
+    background: #ebd3d3;
+}
+
+.correct {
+    border: 2px solid rgb(245, 210, 10);
+    background: rgb(224, 221, 202);
+}
+
+.quizFooter {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.question-status {
+    font-weight: 400;
+}
+
+.currentquetionnumber {
+    margin: 1px;
+    font-weight: 800;
+}
+
+.allquestions {
+    font-weight: 800;
+    margin: 1px;
+}
+
+.nextQuestionbtn {
+    border: 1px solid #8582a1;
+    padding: 3px;
+    border-radius: 4px;
+    transition: 200ms ease;
+    
+}
+
+.nextQuestionbtn:hover{
+    background-color: #8582a1;
+}
+
+.nextQuestionbtn:active{
+    background-color: #b7b4cd58;
+}
+
+
+.result-container {
+    width: 415px;
+    background-color: hsl(208, 25%, 90%);
+    padding: 25px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 2px 2px 6px rgb(39, 27, 99);
+    transition: 200ms ease;
+}
+
+
+.popper {
+    font-size: 10em;
+    margin-left: 50px;
+}
+
+.result-title {
+    margin: 30px;
+}
+
+.result-massage {
+    font-weight:500;
+    margin: 30px;
+}
+
+.answered {
+    font-weight: 800;
+}
+
+
