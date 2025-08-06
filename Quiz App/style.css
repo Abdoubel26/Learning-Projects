@@ -82,8 +82,8 @@ body {
 
 
 .category-optionbtn:hover {
-    background-color: var(--color2);
-    color: #ffffff;
+    background-color: hsl(240, 100%, 90%);
+    color: black;
 }
 
 .questionNo {  
@@ -107,8 +107,8 @@ body {
 }
 
 .questionNobtn:hover {
-    background-color: var(--color2);
-    color: white;
+    background-color: hsl(240, 100%, 90%);
+    color: black;
 }
 
 .starbtn {
@@ -136,6 +136,12 @@ body {
     background-color: var(--color2);
     color: white;
 }
+
+.active:hover {
+    background-color: var(--color2);
+    color: white;
+}
+
 
 .hidden {
     display: none;
