@@ -12,32 +12,32 @@
 
 </head>
 <body>
-    <div class="configuration-container hidden">
+    <div class="configuration-container">
         <h2 class="config-title">Quiz Configuration</h2>
         <h4 class="category-option">Select Category</h4>
         <div class="config-option">
-            <button class="category-optionbtn" onclick="">Mathmatics</button>
-            <button class="category-optionbtn" onclick="">Programming</button>
-            <button class="category-optionbtn" onclick="">History</button>
-            <button class="category-optionbtn" onclick="">Science & Tech</button>
+            <button class="category-optionbtn" id="mathbtn">Mathmatics</button>
+            <button class="category-optionbtn" id="progbtn">Programming</button>
+            <button class="category-optionbtn" id="hisbtn">History</button>
+            <button class="category-optionbtn" id="scietechBtn" >Science & Tech</button>
         </div>
 
         <div class="questionNumberConfig">
             <h5 class="questionNo">Number of Questions</h5>
-            <button class="questionNobtn" onclick="">5</button>
-            <button class="questionNobtn" onclick="">10</button>
-            <button class="questionNobtn" onclick="">15</button>
-            <button class="questionNobtn" onclick="">20</button>
-            <button class="questionNobtn" onclick="">25</button>
+            <button class="questionNobtn" id="five">5</button>
+            <button class="questionNobtn" id="ten">10</button>
+            <button class="questionNobtn" id="fifteen">15</button>
+            <button class="questionNobtn" id="twenty">20</button>
+            <button class="questionNobtn" id="twentyFive">25</button>
         </div>
-        <button class="starbtn" onclick="">Start Quiz</button>
+        <button class="starbtn">Start Quiz</button>
     </div>
 
-    <div class="quiz-container">
+    <div class="quiz-container hidden">
         <header class="quiz-header">
             <h2 class="quiz-title">Quiz Application:</h2>
             <div class="quiz-timer">
-                <h4><span class="material-symbols-outlined">timer</span> 15s</h4>
+                <h4 class="timer"><span class="material-symbols-outlined">timer</span> 15s</h4>
         </header>    
         <hr>
         <div class="quizcontent">
@@ -59,8 +59,8 @@
             </ul>
             <hr>
             <div class="quizFooter">
-                <h6 class="question-status"><span class="currentquetionnumber">3 </span>of <span class="allquestions"> 10</span> Questions</h6>
-                <button class="nextQuestionbtn">Next ➡️</button>
+                <h6 class="question-status"><!--<span class="currentquetionnumber">3 </span>of <span class="allquestions"> 10</span> Questions--></h6>
+                <button class="nextQuestionbtn hidden">Next ➡️</button>
             </div>
         </div>
     </div>
@@ -69,7 +69,7 @@
         <h1 class="popper">🎉</h1>
         <h2 class="result-title">Quiz Completed!</h2>
         <h4 class="result-massage">You answered <span class='answered'>3</span> out of <span class="allquestions">10</span> questions correctly. Great Effort!</h4>
-        <button class="starbtn">Try Again</button>
+        <button class="starbtn" id="tryAgainBtn">Try Again</button>
     </div>
 
      <script type="module" src="javascript/App.js"></script>

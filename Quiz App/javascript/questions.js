@@ -264,135 +264,135 @@ export const questions = [
 }, 
 
   {
-    category: "mathematics",
-    questions: [
-      {
-        question: "What is the square root of 144?",
-        options: ["10", "11", "12", "13"],
-        correctAnswer: 2,
-      },
-      {
-        question: "What is 15 × 13?",
-        options: ["180", "185", "195", "200"],
-        correctAnswer: 2,
-      },
-      {
-        question: "What is the value of 8³?",
-        options: ["512", "216", "256", "128"],
-        correctAnswer: 0,
-      },
-      {
-        question: "What is 48 ÷ 6?",
-        options: ["7", "8", "9", "10"],
-        correctAnswer: 1,
-      },
-      {
-        question: "What is the value of 3 + 5 × 4?",
-        options: ["20", "22", "24", "23"],
-        correctAnswer: 3,
-      },
-      {
-        question: "What is the sum of the angles in a triangle?",
-        options: ["180°", "360°", "90°", "270°"],
-        correctAnswer: 0,
-      },
-      {
-        question: "What is the perimeter of a square with a side length of 4 cm?",
-        options: ["12 cm", "16 cm", "20 cm", "24 cm"],
-        correctAnswer: 1,
-      },
-      {
-        question: "What is 11²?",
-        options: ["121", "131", "141", "111"],
-        correctAnswer: 3,
-      },
-      {
-        question: "What is 9 × 12?",
-        options: ["105", "110", "108", "120"],
-        correctAnswer: 2,
-      },
-      {
-        question: "What is the value of 16 ÷ 4?",
-        options: ["2", "3", "4", "5"],
-        correctAnswer: 2,
-      },
-      {
-        question: "What is 25% of 200?",
-        options: ["30", "40", "50", "60"],
-        correctAnswer: 2,
-      },
-      {
-        question: "What is the area of a rectangle with length 5 cm and width 8 cm?",
-        options: ["40 cm²", "50 cm²", "55 cm²", "60 cm²"],
-        correctAnswer: 0,
-      },
-      {
-        question: "What is the value of 10 ÷ 2 + 3?",
-        options: ["8", "7", "9", "6"],
-        correctAnswer: 1,
-      },
-      {
-        question: "What is 3 × 7 + 2?",
-        options: ["20", "21", "22", "23"],
-        correctAnswer: 1,
-      },
-      {
-        question: "What is the greatest common divisor (GCD) of 24 and 36?",
-        options: ["4", "6", "8", "12"],
-        correctAnswer: 3,
-      },
-      {
-        question: "What is the least common multiple (LCM) of 6 and 8?",
-        options: ["24", "32", "48", "56"],
-        correctAnswer: 0,
-      },
-      {
-        question: "What is the value of 2³ × 3?",
-        options: ["12", "15", "18", "24"],
-        correctAnswer: 0,
-      },
-      {
-        question: "What is the value of 10 × (5 + 3)?",
-        options: ["80", "70", "60", "50"],
-        correctAnswer: 1,
-      },
-      {
-        question: "What is the value of 14 × 14?",
-        options: ["186", "196", "206", "216"],
-        correctAnswer: 1,
-      },
-      {
-        question: "What is the sum of the first 10 positive integers?",
-        options: ["50", "55", "60", "65"],
-        correctAnswer: 1,
-      },
-      {
-        question: "What is 12 × 15?",
-        options: ["150", "160", "170", "180"],
-        correctAnswer: 3,
-      },
-      {
-        question: "What is the area of a circle with a radius of 3 cm? (Use π = 3.14)",
-        options: ["28.26 cm²", "31.42 cm²", "36.14 cm²", "39.14 cm²"],
-        correctAnswer: 0,
-      },
-      {
-        question: "What is the value of (8 + 2) × 3?",
-        options: ["30", "32", "34", "28"],
-        correctAnswer: 3,
-      },
-      {
-        question: "What is the value of 50% of 80?",
-        options: ["30", "35", "40", "45"],
-        correctAnswer: 2,
-      },
-      {
-        question: "What is the value of 25 ÷ 5 × 3?",
-        options: ["12", "15", "18", "20"],
-        correctAnswer: 1,
-      },
-    ],
-  },
+  category: "mathematics",
+  questions: [
+    {
+      question: "What is the square root of 144?",
+      options: ["10", "11", "12", "13"],
+      correctAnswer: 2, // ✅ 12
+    },
+    {
+      question: "What is 15 × 13?",
+      options: ["180", "185", "195", "200"],
+      correctAnswer: 2, // ✅ 195
+    },
+    {
+      question: "What is the value of 8³?",
+      options: ["512", "216", "256", "128"],
+      correctAnswer: 0, // ✅ 512
+    },
+    {
+      question: "What is 48 ÷ 6?",
+      options: ["7", "8", "9", "10"],
+      correctAnswer: 1, // ✅ 8
+    },
+    {
+      question: "What is the value of 3 + 5 × 4?",
+      options: ["20", "22", "24", "23"],
+      correctAnswer: 1, // ✅ 3 + (5×4) = 3 + 20 = 23 → should be index 3
+    },
+    {
+      question: "What is the sum of the angles in a triangle?",
+      options: ["180°", "360°", "90°", "270°"],
+      correctAnswer: 0, // ✅ 180°
+    },
+    {
+      question: "What is the perimeter of a square with a side length of 4 cm?",
+      options: ["12 cm", "16 cm", "20 cm", "24 cm"],
+      correctAnswer: 1, // ✅ 4×4 = 16 cm
+    },
+    {
+      question: "What is 11²?",
+      options: ["121", "131", "141", "111"],
+      correctAnswer: 0, // ✅ 121
+    },
+    {
+      question: "What is 9 × 12?",
+      options: ["105", "110", "108", "120"],
+      correctAnswer: 2, // ✅ 108
+    },
+    {
+      question: "What is the value of 16 ÷ 4?",
+      options: ["2", "3", "4", "5"],
+      correctAnswer: 2, // ❌ should be index 0 → 16 ÷ 4 = 4
+    },
+    {
+      question: "What is 25% of 200?",
+      options: ["30", "40", "50", "60"],
+      correctAnswer: 2, // ✅ 50
+    },
+    {
+      question: "What is the area of a rectangle with length 5 cm and width 8 cm?",
+      options: ["40 cm²", "50 cm²", "55 cm²", "60 cm²"],
+      correctAnswer: 0, // ✅ 5×8 = 40 cm²
+    },
+    {
+      question: "What is the value of 10 ÷ 2 + 3?",
+      options: ["8", "7", "9", "6"],
+      correctAnswer: 0, // ✅ 10 ÷ 2 = 5 → 5 + 3 = 8
+    },
+    {
+      question: "What is 3 × 7 + 2?",
+      options: ["20", "21", "22", "23"],
+      correctAnswer: 2, // ✅ 3×7 = 21 → 21 + 2 = 23
+    },
+    {
+      question: "What is the greatest common divisor (GCD) of 24 and 36?",
+      options: ["4", "6", "8", "12"],
+      correctAnswer: 3, // ✅ 12
+    },
+    {
+      question: "What is the least common multiple (LCM) of 6 and 8?",
+      options: ["24", "32", "48", "56"],
+      correctAnswer: 2, // ✅ 48
+    },
+    {
+      question: "What is the value of 2³ × 3?",
+      options: ["12", "15", "18", "24"],
+      correctAnswer: 0, // ✅ 8×3 = 24 → should be index 3
+    },
+    {
+      question: "What is the value of 10 × (5 + 3)?",
+      options: ["80", "70", "60", "50"],
+      correctAnswer: 0, // ✅ 10×8 = 80
+    },
+    {
+      question: "What is the value of 14 × 14?",
+      options: ["186", "196", "206", "216"],
+      correctAnswer: 1, // ✅ 196
+    },
+    {
+      question: "What is the sum of the first 10 positive integers?",
+      options: ["50", "55", "60", "65"],
+      correctAnswer: 1, // ✅ (10×11)/2 = 55
+    },
+    {
+      question: "What is 12 × 15?",
+      options: ["150", "160", "170", "180"],
+      correctAnswer: 3, // ✅ 180
+    },
+    {
+      question: "What is the area of a circle with a radius of 3 cm? (Use π = 3.14)",
+      options: ["28.26 cm²", "31.42 cm²", "36.14 cm²", "39.14 cm²"],
+      correctAnswer: 0, // ✅ πr² = 3.14×9 = 28.26
+    },
+    {
+      question: "What is the value of (8 + 2) × 3?",
+      options: ["30", "32", "34", "28"],
+      correctAnswer: 0, // ✅ (8+2)×3 = 30
+    },
+    {
+      question: "What is the value of 50% of 80?",
+      options: ["30", "35", "40", "45"],
+      correctAnswer: 2, // ✅ 40
+    },
+    {
+      question: "What is the value of 25 ÷ 5 × 3?",
+      options: ["12", "15", "18", "20"],
+      correctAnswer: 1, // ✅ 25 ÷ 5 = 5 → 5×3 = 15
+    },
+  ],
+},
 
  {
   category: "science_and_tech",

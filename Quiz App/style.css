@@ -221,20 +221,22 @@ body {
     background: #ebd3d3;
 }
 
+    
 .wrong:hover {
     border: 2px solid rgb(226, 62, 62);
     background: #ebd3d3;
 }
 
-
 .correct {
-    border: 2px solid rgb(245, 210, 10);
+    border: 2px solid rgb(176, 151, 8);
     background: rgb(224, 221, 202);
 }
+
 .correct:hover {
-    border: 2px solid rgb(245, 210, 10);
+    border: 2px solid rgb(176, 151, 8);
     background: rgb(224, 221, 202);
 }
+
 
 .quizFooter {
     display: flex;
