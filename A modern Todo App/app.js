@@ -39,7 +39,7 @@ function displaytodos() {
     const todo = document.createElement("li");
     todo.classList.add('todo');
 
-    
+  
     // 1. Checkbox
     const checkbox = document.createElement('input');
     checkbox.classList.add('RCB');
@@ -104,7 +104,7 @@ function savetodos() {
 
 function gettodos(){
     const todoJson = localStorage.getItem("todos");
-    const todoParsed = JSON.parse(todoJson) || "[]";
+    const todoParsed = JSON.parse(todoJson) || [];
     return todoParsed;
 }
 

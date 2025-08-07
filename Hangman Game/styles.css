@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+    font-family: Montserrat;
+    display: flex;
+    gap: 20px;
+    background: linear-gradient( to top, rgb(64, 72, 164), rgb(75, 169, 195));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    user-select: none;
+}
+
+h3 {
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+h4{
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-height: 225px;
+}
+
+
+
+.Hangmandiv {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    width: 50%;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px ;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-end;
+    margin: 20px;
+}
+
+.keys {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    user-select: none;
+}
+
+
+@media (max-width: 500px){
+    body{
+        display: block;
+    }
+    .Hangmandiv {
+        width: 100%;
+    }
+}
+
+.key {
+    padding: 10px;
+    font-family: Montserrat;;
+    border: none;
+    border-radius: 10px;
+    background-color: hsl(240, 100%, 27%);
+    color: aqua;
+    font-size: 1.2em;
+    transition: 200ms ease;
+}
+
+
+.key:hover {
+    background-color: hsl(240, 100%, 50%);
+    transform: scale(1.2, 1.2);
+}
+
+.key:active {
+    transform: scale(0.9, 0.9);
+}
+
+.clicked {
+    background-color: hsl(240, 19%, 35%);
+    color: gray;
+}
+
+.hidden {
+    display: none;
+}
+
+.losediv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 300px;
+    min-height: 150px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+
+
+
+.Emoji {
+    transform: scale(0.4, 0.5);
+    transform-origin: center;   
+}
+
+.tryAgain {
+    font-size: 1.5em;
+    border: none;
+    padding: 7px;
+    border-radius: 4px;
+    background-color: blue;
+    font-weight: bold;
+    color: rgb(231, 224, 224);
+    box-shadow: 2px 2px black;
+
+
+}

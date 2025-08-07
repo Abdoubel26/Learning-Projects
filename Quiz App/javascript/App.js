@@ -1,5 +1,5 @@
 import { questions } from "./questions.js";
-
+ 
 
 let currentQuestion = null;
 let quizCategory = "programming";
