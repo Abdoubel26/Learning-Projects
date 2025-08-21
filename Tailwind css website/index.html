@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" src="style.css">
+    <title>Farm</title>
+</head>
+<body>
+    
+    <div class="container min-h-screen bg-[url('images/image.png')] bg-center bg-cover px-28 py-5">
+        <nav class="flex  items-center ">
+            <img src="images/logo.png" class="w-40 cursor-pointer">
+            <ul class="flex-1 text-center">
+                <li class="list-none inline-block px-5"><a href="#" class="no-underline text-white px-2">Home</a></li>
+                <li class="list-none inline-block px-5"><a href="#" class="no-underline text-white px-2">About</a></li>
+                <li class="list-none inline-block px-5"><a href="#" class="no-underline text-white px-2">Features</a></li>
+                <li class="list-none inline-block px-5"><a href="#" class="no-underline text-white px-2">Contact</a></li>
+            </ul>
+            <img src="images/cart.png" class="w-8 cursor-pointer">
+        </nav>
+         
+        <div class="text-white mt-38 max-w-xl">
+            <h1 class="text-6xl font-semibold leading-normal">Groceries<br>delivery in
+            <span class="font-light">15 mins</span> </h1>
+            <p>Grocify offer a wide range of products, including fresh products, meats, dairy, baked goods and non-perishable items.</p>
+        </div>
+
+        <div class="mt-5 text-white flex">
+            <a href="#" class="bg-yellow-300 max-w-fit rounded-3xl py-2 px-7 font-semibold mx-1 hover:bg-yellow-400 hover:scale-110 transition-all active:bg-yellow-300 active:scale-100">Order Now</a>
+            <a href="#" class="border duration-300 border-yellow-300 max-w-fit rounded-3xl py-2 px-7 font-semibold mx-2 hover:bg-yellow-300 transition-all flex">Download App<svg class='ml-1' xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg></a>
+        </div>
+
+        <div>
+            <img src="images/grocery-image.png" class="w-full xl:w-1/2 xl:absolute bottom-0 right-0">
+        </div>
+    </div>
+</body>
+</html>
